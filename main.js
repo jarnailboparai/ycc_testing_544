@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        alert('sdf');
     },
     // Bind Event Listeners
     //
@@ -27,6 +28,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+         alert('dispacth');
     },
     // deviceready Event Handler
     //
@@ -45,6 +47,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+       alert('Received Event: ' + id);
         
         if( window.AdMob ) {
             var adIdiOS = 'a1532fe002423dc';
