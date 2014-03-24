@@ -121,6 +121,15 @@ img {
 				<label>Videos</label>
 		</a>
 	</div>
+	
+		           <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <div>
+            	<button id='show-ad' onClick="if(window.plugins.AdMob){ window.AdMob.plugins.showAd(true); }">Show Ad</button>
+            	<button id='hide-ad' onClick="if(window.plugins.AdMob){ window.AdMob.plugins.showAd(false); }">Hide Ad</button>
+            </div>
 
 	
      
@@ -136,7 +145,11 @@ img {
 </div>
 
 <!-- /page --> 
-
+        <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 
 
 
